@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports | Insightful Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-blog"></i>
+                    Insightful
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sports News & Updates</h1>
+                <p>Stay ahead with the latest sports news, match highlights, player interviews, and expert analysis from
+                    around the world.</p>
+                <div class="hero-btns">
+                    <a href="#featured" class="btn">Latest News</a>
+                    <a href="#events" class="btn btn-outline">Upcoming Events</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Sports News -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Sports News</h2>
+            <div class="featured-grid">
+                <!-- Card 1 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&h=400"
+                            alt="Champions League">
+                    </div>
+                    <div class="card-content">
+                        <span class="category football">Football</span>
+                        <h3>Champions League Final: Historic Comeback Seals Victory</h3>
+                        <p>Relive the thrilling moments as underdogs complete an unprecedented comeback in the Champions
+                            League final.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>James Wilson</div>
+                                <div>June 12, 2023 • 5 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&h=400"
+                            alt="NBA Finals">
+                    </div>
+                    <div class="card-content">
+                        <span class="category basketball">Basketball</span>
+                        <h3>NBA Finals MVP Makes History With Triple-Double Average</h3>
+                        <p>Breaking down the incredible performance that led to a record-breaking NBA Finals series.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                             <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                            <div>
+                                <div>Lisa Thompson</div>
+                                <div>June 10, 2023 • 7 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?auto=format&fit=crop&w=600&h=400"
+                            alt="Wimbledon">
+                    </div>
+                    <div class="card-content">
+                        <span class="category tennis">Tennis</span>
+                        <h3>Wimbledon 2023: Newcomer Stuns Defending Champion</h3>
+                        <p>The young star's incredible run continues with a straight-sets victory over the world number
+                            one.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0e16019?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>Robert Garcia</div>
+                                <div>June 8, 2023 • 6 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Sports News -->
+    <section class="latest">
+        <div class="container">
+            <div class="latest-grid">
+                <div class="posts">
+                    <h2 class="section-title">Latest Sports Articles</h2>
+                    <div class="posts-grid">
+                        <!-- Post 1 -->
+                        <article class="post-card">
+                            <div class="post-img">
+                                <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=600&h=400"
+                                    alt="Euro 2024">
+                            </div>
+                            <div class="post-content">
+                                <span class="category football">Football</span>
+                                <h3>Euro 2024 Qualifiers: Surprise Results Shake Up Groups</h3>
+                                <p class="post-excerpt">Analysis of the unexpected outcomes that have completely changed
+                                    the landscape of the Euro 2024 qualification groups with just three matches
+                                    remaining.</p>
+                                <!-- Example in your featured cards -->
+                                <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                <!-- id=1, id=2 etc. according to your allPosts array -->
+                                <div class="meta">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                                    <div>
+                                        <div>Michael Chen</div>
+                                        <div>June 15, 2023 • 8 min read</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Post 2 -->
+                        <article class="post-card">
+                            <div class="post-img">
+                                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&h=400"
+                                    alt="Cycling">
+                            </div>
+                            <div class="post-content">
+                                <span class="category olympics">Cycling</span>
+                                <h3>Tour de France 2023: Route Reveal and Early Predictions</h3>
+                                <p class="post-excerpt">The complete breakdown of next year's Tour de France route, with
+                                    expert analysis on which riders it favors and who might wear yellow in Paris.</p>
+                                <!-- Example in your featured cards -->
+                                <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                <!-- id=1, id=2 etc. according to your allPosts array -->
+                                <div class="meta">
+                                      <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                                    <div>
+                                        <div>Sarah Johnson</div>
+                                        <div>June 14, 2023 • 10 min read</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Post 3 -->
+                        <article class="post-card">
+                            <div class="post-img">
+                                <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=600&h=400"
+                                    alt="Cricket">
+                            </div>
+                            <div class="post-content">
+                                <span class="category olympics">Cricket</span>
+                                <h3>Ashes Series Preview: Can England Challenge Australia?</h3>
+                                <p class="post-excerpt">With the Ashes just weeks away, we examine England's new
+                                    aggressive approach and whether it can succeed against the world champions.</p>
+                                <!-- Example in your featured cards -->
+                                <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                <!-- id=1, id=2 etc. according to your allPosts array -->
+                                <div class="meta">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                                    <div>
+                                        <div>David Wilson</div>
+                                        <div>June 13, 2023 • 12 min read</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- About Widget -->
+                    <div class="sidebar-widget about-widget">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Sports Editor">
+                        <h4>Sports Editor</h4> 
+                        <p>Hi, I'm Mark Davis, former professional athlete turned sports journalist. I bring you the
+                            most exciting stories and in-depth analysis from the world of sports.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h4>Sports Categories</h4>
+                        <ul class="categories-list">
+                            <li><a href="#">Football <span>42</span></a></li>
+                            <li><a href="#">Basketball <span>28</span></a></li>
+                            <li><a href="#">Baseball <span>19</span></a></li>
+                            <li><a href="#">Tennis <span>15</span></a></li>
+                            <li><a href="#">Athletics <span>12</span></a></li>
+                            <li><a href="#">Olympics <span>9</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="sidebar-widget">
+                        <h4>Popular Sports News</h4>
+                        <ul class="popular-posts">
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=200&h=200"
+                                        alt="Post">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>World Cup 2026 Host Cities Announced</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>June 5, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=200&h=200"
+                                        alt="Post">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>NBA Draft: Top 5 Prospects to Watch</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>June 2, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=200&h=200"
+                                        alt="Post">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Record-Breaking Marathon Time in Berlin</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 28, 2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget">
+                        <h4>Sports Tags</h4>
+                        <div class="tags">
+                            <a href="#" class="tag">Premier League</a>
+                            <a href="#" class="tag">NBA</a>
+                            <a href="#" class="tag">MLB</a>
+                            <a href="#" class="tag">Grand Slam</a>
+                            <a href="#" class="tag">Olympics</a>
+                            <a href="#" class="tag">Transfer News</a>
+                            <a href="#" class="tag">Injury Updates</a>
+                            <a href="#" class="tag">Fantasy Sports</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events" id="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Sports Events</h2>
+            <div class="table-responsive">
+                <table class="events-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Event</th>
+                            <th>Sport</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>June 18, 2023</td>
+                            <td>NBA Finals Game 7</td>
+                            <td><span class="event-sport"
+                                    style="background: rgba(239, 71, 111, 0.1); color: #ef476f;">Basketball</span></td>
+                            <td>Denver, CO</td>
+                        </tr>
+                        <tr>
+                            <td>June 21, 2023</td>
+                            <td>MLB: Yankees vs Red Sox</td>
+                            <td><span class="event-sport"
+                                    style="background: rgba(72, 199, 116, 0.1); color: var(--sports);">Baseball</span>
+                            </td>
+                            <td>Boston, MA</td>
+                        </tr>
+                        <tr>
+                            <td>June 24, 2023</td>
+                            <td>Wimbledon Championships</td>
+                            <td><span class="event-sport"
+                                    style="background: rgba(255, 209, 102, 0.1); color: #ffd166;">Tennis</span></td>
+                            <td>London, UK</td>
+                        </tr>
+                        <tr>
+                            <td>July 1, 2023</td>
+                            <td>Tour de France</td>
+                            <td><span class="event-sport"
+                                    style="background: rgba(118, 96, 138, 0.1); color: #76608a;">Cycling</span></td>
+                            <td>Bilbao, Spain</td>
+                        </tr>
+                        <tr>
+                            <td>July 10, 2023</td>
+                            <td>MLS All-Star Game</td>
+                            <td><span class="event-sport"
+                                    style="background: rgba(72, 199, 116, 0.1); color: var(--sports);">Football</span>
+                            </td>
+                            <td>Washington, DC</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Sports Newsletter</h2>
+            <p>Get the latest sports news, analysis, and updates delivered straight to your inbox. Never miss a big game
+                or breaking story again.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <h4>About Insightful Sports</h4>
+                    <p>Your premier destination for comprehensive sports coverage, expert analysis, and breaking news
+                        from all major leagues and competitions worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Football</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Basketball</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Baseball</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Tennis</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Sports Leagues</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Premier League</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> NBA</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> MLB</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> NFL</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> NHL</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 456 Stadium Avenue, Sports City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 987-6543</li>
+                        <li><i class="fas fa-envelope"></i> sports@insightfulblog.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Insightful Sports. All rights reserved. The latest scores, news and analysis from the
+                    world of sports.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function () {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+
+            // Optional: Change icon when menu is open
+            this.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function () {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Responsive adjustments
+        window.addEventListener('resize', function () {
+            const navLinks = document.querySelector('.nav-links');
+            if (window.innerWidth > 768) {
+                navLinks.style.display = 'flex';
+            } else {
+                navLinks.style.display = 'none';
+            }
+        });
+
+        // Newsletter form submission
+        document.querySelector('.newsletter-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert(`Thank you for subscribing to our sports newsletter with ${email}! You'll receive our next update soon.`);
+                this.reset();
+            }
+        });
+
+    </script>
+</body>
+
+</html>

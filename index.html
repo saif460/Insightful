@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insightful Blog | Thoughts That Matter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="Insightful Blog - Explore technology, lifestyle, travel, and more with thought-provoking articles.">
+    <meta name="keywords" content="blog, technology, lifestyle, travel, productivity">
+    <link rel="canonical" href="https://yourdomain.com" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+
+</script>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-blog"></i>
+                    Insightful
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Stories That Inspire and Transform</h1>
+                <p>Join our community of thinkers, explorers, and storytellers. Dive into thought-provoking content that
+                    challenges perspectives and sparks creativity.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn">Start Reading</a>
+                    <a href="become-a-writer.html" class="btn btn-outline">Become a Writer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Posts</h2>
+            <div class="featured-grid">
+                <!-- Card 1 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=600&h=400"
+                            alt="Future of AI">
+                    </div>
+                    <div class="card-content">
+                        <span class="category tech">Technology</span>
+                        <h3>The Future of Artificial Intelligence in Everyday Life</h3>
+                        <p>Exploring how AI will transform our daily routines and what it means for the future of work,
+                            leisure, and human interaction.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>Michael Chen</div>
+                                <div>May 12, 2023 • 8 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 2 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&h=400"
+                            alt="Sustainable Cooking">
+                    </div>
+                    <div class="card-content">
+                        <span class="category lifestyle">Lifestyle</span>
+                        <h3>Sustainable Cooking: Reducing Waste in Your Kitchen</h3>
+                        <p>Practical tips and creative recipes to help you minimize food waste and create delicious
+                            meals with what you already have.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=2" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                            <div>
+                                <div>Johnson</div>
+                                <div>June 3, 2023 • 6 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=600&h=400"
+                            alt="Hidden Gems">
+                    </div>
+                    <div class="card-content">
+                        <span class="category travel">Travel</span>
+                        <h3>Hidden Gems: Unexplored European Villages You Must Visit</h3>
+                        <p>Escape the tourist crowds and discover charming, lesser-known villages that offer authentic
+                            cultural experiences.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=3" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0e16019?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>David Wilson</div>
+                                <div>April 28, 2023 • 10 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="posts">
+                    <h2 class="section-title">Latest Articles</h2>
+                    <div class="posts-grid">
+                        <!-- Post 1 -->
+                        <article class="post-card">
+                            <div class="post-img">
+                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=400"
+                                    alt="Web Development">
+                            </div>
+                            <div class="post-content">
+                                <span class="category tech">Technology</span>
+                                <h3>The Evolution of Web Development in the Last Decade</h3>
+                                <p class="post-excerpt">From static HTML pages to dynamic JavaScript applications,
+                                    explore how web development has transformed and what trends are shaping its future.
+                                </p>
+                                <!-- Example in your featured cards -->
+                                <a href="post.html?id=4" class="read-more">Read Full Post →</a>
+                                <!-- id=1, id=2 etc. according to your allPosts array -->
+                                <div class="meta">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                                    <div>
+                                        <div>Alex Morgan</div>
+                                        <div>June 15, 2023 • 12 min read</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Post 2 -->
+                        <article class="post-card">
+                            <div class="post-img">
+                                <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&w=600&h=400"
+                                    alt="Mindfulness">
+                            </div>
+                            <div class="post-content">
+                                <span class="category lifestyle">Lifestyle</span>
+                                <h3>Mindfulness in a Digital Age: Finding Balance</h3>
+                                <p class="post-excerpt">Discover practical techniques to cultivate mindfulness and
+                                    maintain mental wellbeing in our constantly connected world.</p>
+                                <!-- Example in your featured cards -->
+                                <a href="post.html?id=5" class="read-more">Read Full Post →</a>
+                                <!-- id=1, id=2 etc. according to your allPosts array -->
+                                <div class="meta">
+                                     <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                                    <div>
+                                        <div>Emma Rodriguez</div>
+                                        <div>June 10, 2023 • 7 min read</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Post 3 -->
+                        <article class="post-card">
+                            <div class="post-img">
+                                <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=600&h=400"
+                                    alt="Travel Photography">
+                            </div>
+                            <div class="post-content">
+                                <span class="category travel">Travel</span>
+                                <h3>Mastering Travel Photography: Tips from Professionals</h3>
+                                <p class="post-excerpt">Learn how to capture stunning travel photos that tell compelling
+                                    stories, with advice from award-winning travel photographers.</p>
+                                <!-- Example in your featured cards -->
+                                <a href="post.html?id=6" class="read-more">Read Full Post →</a>
+                                <!-- id=1, id=2 etc. according to your allPosts array -->
+                                <div class="meta">
+                                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                                    <div>
+                                        <div>Thomas Lee</div>
+                                        <div>June 5, 2023 • 9 min read</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Post 4 -->
+                        <article class="post-card">
+                            <div class="post-img">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&h=400"
+                                    alt="Remote Work">
+                            </div>
+                            <div class="post-content">
+                                <span class="category tech">Technology</span>
+                                <h3>The Future of Remote Work: Productivity Tools and Best Practices</h3>
+                                <p class="post-excerpt">Explore the technologies and strategies that are shaping the
+                                    future of remote work and how to stay productive in distributed teams.</p>
+                                <!-- Example in your featured cards -->
+                                <a href="post.html?id=7" class="read-more">Read Full Post →</a>
+                                <!-- id=1, id=2 etc. according to your allPosts array -->
+                                <div class="meta">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                                    <div>
+                                        <div>Jennifer Park</div>
+                                        <div>May 30, 2023 • 11 min read</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- About Widget -->
+                    <div class="sidebar-widget about-widget">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200"
+                            alt="Blog Author">
+                        <h4>About Me</h4>
+                        <p>Hello! I'm Jessica, a writer and digital nomad passionate about technology, sustainable
+                            living, and exploring new cultures. Join me on this journey of discovery.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget">
+                        <h4>Categories</h4>
+                        <ul class="categories-list">
+                            <li><a href="Technology.html">Technology <span>24</span></a></li>
+                            <li><a href="lifestyle.html">Lifestyle <span>18</span></a></li>
+                            <li><a href="travel.html">Travel <span>15</span></a></li>
+                            <li><a href="Productivity.html">Productivity <span>12</span></a></li>
+                            <li><a href="health&wellnss.html">Health & Wellness <span>9</span></a></li>
+                            <li><a href="Design.html">Design <span>7</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Posts -->
+                    <div class="sidebar-widget">
+                        <h4>Popular Posts</h4>
+                        <ul class="popular-posts">
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=200&h=200"
+                                        alt="Post">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>10 JavaScript Frameworks to Learn in 2023</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>June 2, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=200&h=200"
+                                        alt="Post">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Minimalism: Living with Less for More Freedom</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 25, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=200&h=200"
+                                        alt="Post">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Bali Travel Guide: Beyond the Tourist Trails</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 18, 2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget">
+                        <h4>Tags</h4>
+                        <div class="tags">
+                            <a href="" class="tag">JavaScript</a>
+                            <a href="" class="tag">React</a>
+                            <a href="" class="tag">Travel</a>
+                            <a href="" class="tag">Productivity</a>
+                            <a href="" class="tag">Mindfulness</a>
+                            <a href="" class="tag">Design</a>
+                            <a href="" class="tag">CSS</a>
+                            <a href="" class="tag">Photography</a>
+                            <a href="" class="tag">Food</a>
+                            <a href="" class="tag">Sustainability</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with our latest articles, exclusive content, and special offers. No spam, just valuable
+                insights delivered to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <h4>About Insightful</h4>
+                    <p>A platform for curious minds to explore ideas, share perspectives, and discover the world through
+                        thoughtful content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> Categories</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="Technology.html"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                        <li><a href="lifestyle.html"><i class="fas fa-chevron-right"></i> Lifestyle</a></li>
+                        <li><a href="travel.html"><i class="fas fa-chevron-right"></i> Travel</a></li>
+                        <li><a href="Productivity.html"><i class="fas fa-chevron-right"></i> Productivity</a></li>
+                        <li><a href="health&wellnss.html"><i class="fas fa-chevron-right"></i> Health & Wellness</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Creative Street, Design City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> contact@insightfulblog.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Insightful Blog. All rights reserved. Designed with <i class="fas fa-heart"></i> for
+                    curious minds.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function () {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+
+            // Optional: Change icon when menu is open
+            this.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Responsive adjustments
+        window.addEventListener('resize', function () {
+            const navLinks = document.querySelector('.nav-links');
+            if (window.innerWidth > 768) {
+                navLinks.style.display = 'flex';
+            } else {
+                navLinks.style.display = 'none';
+            }
+        });
+
+        // Newsletter form submission
+        document.querySelectorAll('.newsletter-form').forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                if (email) {
+                    alert(`Thank you for subscribing with ${email}! You'll receive our tech newsletter soon.`);
+                    this.reset();
+                }
+            });
+        });
+
+        // Fetch all posts
+        async function loadPosts() {
+            const res = await fetch('http://localhost:5000/api/posts');
+            const posts = await res.json();
+            console.log(posts);
+        }
+
+        // Create a post (authenticated)
+        async function createPost(postData) {
+            const token = localStorage.getItem('token');
+            const res = await fetch('http://localhost:5000/api/posts', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(postData)
+            });
+            return await res.json();
+        }
+
+        // Like a Post
+        async function likePost(postId) {
+            const token = localStorage.getItem('token');
+            const res = await fetch(`/api/interactions/posts/${postId}/like`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+            return await res.json();
+        }
+
+        // Add a Comment
+        async function addComment(postId, text) {
+            const token = localStorage.getItem('token');
+            const res = await fetch(`/api/interactions/posts/${postId}/comment`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({ text })
+            });
+            return await res.json();
+        }
+
+        // Add WebSocket for live interactions:
+        // server.js
+        const WebSocket = require('ws');
+        const wss = new WebSocket.Server({ server });
+
+        wss.on('connection', (ws) => {
+            ws.on('message', (message) => {
+                // Broadcast likes/comments to all clients
+                wss.clients.forEach(client => {
+                    if (client.readyState === WebSocket.OPEN) {
+                        client.send(message);
+                    }
+                });
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

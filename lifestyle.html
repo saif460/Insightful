@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle | Insightful Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-blog"></i>
+                    Insightful
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Lifestyle Hero Section -->
+    <section class="lifestyle-hero">
+        <div class="container">
+            <h1>Lifestyle & Wellness</h1>
+            <p>Discover tips, inspiration, and stories to help you live your best life. From mindfulness to home
+                organization, we've got you covered.</p>
+        </div>
+    </section>
+
+    <!-- Lifestyle Featured Section -->
+    <section class="lifestyle-featured">
+        <div class="container">
+            <h2 class="section-title">Featured Lifestyle Articles</h2>
+
+            <div class="featured-grid">
+                <!-- Featured Article 1 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=600&h=400"
+                            alt="Minimalism">
+                    </div>
+                    <div class="card-content">
+                        <span class="category lifestyle">Minimalism</span>
+                        <h3>The Art of Minimalism: Living With Less for More Happiness</h3>
+                        <p>How simplifying your possessions and commitments can lead to greater freedom and contentment
+                            in daily life.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                           <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                            <div>
+                                <div>Sarah Johnson</div>
+                                <div>June 10, 2023 • 6 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Article 2 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&h=400"
+                            alt="Mindfulness">
+                    </div>
+                    <div class="card-content">
+                        <span class="category lifestyle">Wellness</span>
+                        <h3>Mindfulness Meditation: A Beginner's Guide to Daily Practice</h3>
+                        <p>Simple techniques to incorporate mindfulness into your routine for reduced stress and
+                            increased focus.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                         <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                            <div>
+                                <div>Emma Rodriguez</div>
+                                <div>June 5, 2023 • 8 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Article 3 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&h=400"
+                            alt="Sustainable Living">
+                    </div>
+                    <div class="card-content">
+                        <span class="category lifestyle">Sustainability</span>
+                        <h3>Sustainable Living: Small Changes With Big Impact</h3>
+                        <p>Practical ways to reduce your environmental footprint without overhauling your entire
+                            lifestyle.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Author">
+                            <div>
+                                <div>Lisa Chen</div>
+                                <div>May 28, 2023 • 7 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Articles Section -->
+    <section class="lifestyle-articles">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="posts">
+                    <h2 class="section-title">Latest Lifestyle Articles</h2>
+
+                    <!-- Lifestyle Categories -->
+                    <div class="trending-topics">
+                        <h4>Explore Categories:</h4>
+                        <div class="lifestyle-categories">
+                            <a href="#" class="lifestyle-category">Wellness</a>
+                            <a href="#" class="lifestyle-category">Minimalism</a>
+                            <a href="#" class="lifestyle-category">Relationships</a>
+                            <a href="#" class="lifestyle-category">Productivity</a>
+                            <a href="#" class="lifestyle-category">Sustainability</a>
+                            <a href="#" class="lifestyle-category">Home & Decor</a>
+                            <a href="#" class="lifestyle-category">Personal Finance</a>
+                            <a href="#" class="lifestyle-category">Self-Care</a>
+                        </div>
+                    </div>
+
+                    <!-- Inspiration Section -->
+                    <div class="inspiration-section">
+                        <p class="quote">"The secret of happiness, you see, is not found in seeking more, but in
+                            developing the capacity to enjoy less."</p>
+                        <p class="quote-author">— Socrates</p>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&w=600&h=400"
+                                alt="Digital Detox">
+                        </div>
+                        <div class="post-content">
+                            <span class="category lifestyle">Wellness</span>
+                            <h3>The Digital Detox Challenge: Reclaiming Your Attention</h3>
+                            <p class="post-excerpt">A 7-day plan to reduce screen time and reconnect with the physical
+                                world, with measurable benefits for mental health.</p>
+                            <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                            <div class="article-meta">
+                                <span>By David Wilson</span>
+                                <span>June 18, 2023 • 5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&h=400"
+                                alt="Home Organization">
+                        </div>
+                        <div class="post-content">
+                            <span class="category lifestyle">Home & Decor</span>
+                            <h3>Home Organization: The KonMari Method for Busy People</h3>
+                            <p class="post-excerpt">Adapted version of Marie Kondo's famous method for those who don't
+                                have weeks to devote to tidying up.</p>
+                          <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                            <div class="article-meta">
+                                <span>By Jessica Brown</span>
+                                <span>June 15, 2023 • 6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&h=400"
+                                alt="Healthy Eating">
+                        </div>
+                        <div class="post-content">
+                            <span class="category lifestyle">Wellness</span>
+                            <h3>Meal Prep Made Easy: Healthy Eating for Busy Weekdays</h3>
+                            <p class="post-excerpt">Simple recipes and strategies to prepare a week's worth of
+                                nutritious meals in just 2 hours every Sunday.</p>
+                         <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                            <div class="article-meta">
+                                <span>By Thomas Lee</span>
+                                <span>June 12, 2023 • 8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- About Widget -->
+                    <div class="sidebar-widget about-widget">
+                       <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                        alt="Lifestyle Editor">
+                        <h4>Lifestyle Editor</h4>
+                        <p>Hello, I'm Sophia! As a wellness coach and mindfulness practitioner, I'm passionate about
+                            helping people create balanced, intentional lives.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Popular Lifestyle Posts -->
+                    <div class="sidebar-widget">
+                        <h4>Popular Lifestyle Posts</h4>
+                        <ul class="popular-posts">
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=200&h=200"
+                                        alt="Minimalism">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>30-Day Minimalism Challenge</h5>
+                                      <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 25, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=200&h=200"
+                                        alt="Healthy Eating">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Plant-Based Diet for Beginners</h5>
+                                      <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 18, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=200&h=200"
+                                        alt="Yoga">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Morning Yoga Routine for Energy</h5>
+                                      <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 10, 2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Lifestyle Newsletter -->
+                    <div class="sidebar-widget">
+                        <h4>Wellness Newsletter</h4>
+                        <p>Get weekly inspiration for living your best life - mindfulness tips, healthy recipes, and
+                            self-care ideas.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <h4>About Insightful</h4>
+                    <p>A platform for curious minds to explore ideas, share perspectives, and discover the world through
+                        thoughtful content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="technology.html"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                        <li><a href="lifestyle.html"><i class="fas fa-chevron-right"></i> Lifestyle</a></li>
+                        <li><a href="travel.html"><i class="fas fa-chevron-right"></i> Travel</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Lifestyle Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Wellness</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Minimalism</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home & Decor</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Relationships</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Self-Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Wellness Ave, Harmony City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 987-6543</li>
+                        <li><i class="fas fa-envelope"></i> lifestyle@insightfulblog.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Insightful Blog. All rights reserved. Designed for balanced living.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function () {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+
+            // Optional: Change icon when menu is open
+            this.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function () {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Responsive adjustments
+        window.addEventListener('resize', function () {
+            const navLinks = document.querySelector('.nav-links');
+            if (window.innerWidth > 768) {
+                navLinks.style.display = 'flex';
+            } else {
+                navLinks.style.display = 'none';
+            }
+        });
+
+        // Newsletter form submission
+        document.querySelectorAll('.newsletter-form').forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                if (email) {
+                    alert(`Thank you for subscribing with ${email}! You'll receive our tech newsletter soon.`);
+                    this.reset();
+                }
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>

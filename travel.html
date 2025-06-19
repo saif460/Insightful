@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel | Insightful Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-blog"></i>
+                    Insightful
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Travel Hero Section -->
+    <section class="travel-hero">
+        <div class="container">
+            <h1>Travel Adventures</h1>
+            <p>Discover hidden gems, travel tips, and inspiring stories from around the globe. Your next adventure
+                starts here.</p>
+        </div>
+    </section>
+
+    <!-- Travel Featured Section -->
+    <section class="travel-featured">
+        <div class="container">
+            <h2 class="section-title">Featured Travel Stories</h2>
+
+            <div class="featured-grid">
+                <!-- Featured Article 1 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=600&h=400"
+                            alt="European Villages">
+                    </div>
+                    <div class="card-content">
+                        <span class="category travel">Europe</span>
+                        <h3>Hidden Gems: Unexplored European Villages You Must Visit</h3>
+                        <p>Escape the tourist crowds and discover charming, lesser-known villages that offer authentic
+                            cultural experiences.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>David Wilson</div>
+                                <div>June 15, 2023 • 10 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Article 2 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&w=600&h=400"
+                            alt="Bali Travel">
+                    </div>
+                    <div class="card-content">
+                        <span class="category travel">Asia</span>
+                        <h3>Bali Beyond the Beaches: Cultural Experiences You Can't Miss</h3>
+                        <p>Explore the rich cultural heritage of Bali through these authentic experiences away from the
+                            tourist hotspots.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>Maria Garcia</div>
+                                <div>June 8, 2023 • 12 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Article 3 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1470114716159-e389f8712fda?auto=format&fit=crop&w=600&h=400"
+                            alt="Road Trip">
+                    </div>
+                    <div class="card-content">
+                        <span class="category travel">North America</span>
+                        <h3>The Ultimate Pacific Coast Highway Road Trip Itinerary</h3>
+                        <p>From California to Washington, this 2-week itinerary covers all the must-see stops along the
+                            stunning West Coast.</p>
+                        <!-- Example in your featured cards -->
+                        <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                        <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>James Peterson</div>
+                                <div>June 1, 2023 • 14 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Articles Section -->
+    <section class="travel-articles">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="posts">
+                    <h2 class="section-title">Latest Travel Guides</h2>
+
+                    <!-- Travel Categories -->
+                    <div class="trending-topics">
+                        <h4>Explore Destinations:</h4>
+                        <div class="travel-categories">
+                            <a href="#" class="travel-category">Europe</a>
+                            <a href="#" class="travel-category">Asia</a>
+                            <a href="#" class="travel-category">North America</a>
+                            <a href="#" class="travel-category">South America</a>
+                            <a href="#" class="travel-category">Africa</a>
+                            <a href="#" class="travel-category">Oceania</a>
+                            <a href="#" class="travel-category">Middle East</a>
+                            <a href="#" class="travel-category">Caribbean</a>
+                        </div>
+                    </div>
+
+                    <!-- Destination Guide -->
+                    <div class="destination-guide">
+                        <div class="guide-header">
+                            <h3>Essential Travel Resources</h3>
+                            <p>Everything you need to plan your next adventure</p>
+                        </div>
+                        <div class="guide-grid">
+                            <div class="guide-card">
+                                <div class="guide-icon">
+                                    <i class="fas fa-suitcase-rolling"></i>
+                                </div>
+                                <h4>Packing Lists</h4>
+                                <p>Curated packing lists for every type of trip and destination</p>
+                            </div>
+                            <div class="guide-card">
+                                <div class="guide-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h4>Food Guides</h4>
+                                <p>Where and what to eat in destinations around the world</p>
+                            </div>
+                            <div class="guide-card">
+                                <div class="guide-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <h4>Budget Tips</h4>
+                                <p>How to stretch your travel budget without sacrificing experiences</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Map Placeholder -->
+                    <div class="map-container">
+                        <p><i class="fas fa-map-marked-alt fa-3x"></i></p>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&h=400"
+                                alt="Japan Travel">
+                        </div>
+                        <div class="post-content">
+                            <span class="category travel">Asia</span>
+                            <h3>Japan on a Budget: How to Experience the Best for Less</h3>
+                            <p class="post-excerpt">Pro tips for affordable accommodations, transportation, and dining
+                                in one of the world's most fascinating countries.</p>
+                            <!-- Example in your featured cards -->
+                            <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                            <!-- id=1, id=2 etc. according to your allPosts array -->
+                            <div class="article-meta">
+                                <span>By Aiko Tanaka</span>
+                                <span>June 18, 2023 • 9 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&h=400"
+                                alt="Solo Travel">
+                        </div>
+                        <div class="post-content">
+                            <span class="category travel">Tips</span>
+                            <h3>Solo Travel Safety: Essential Tips for Women Exploring Alone</h3>
+                            <p class="post-excerpt">Expert advice for staying safe while enjoying the freedom and growth
+                                that comes with solo adventures.</p>
+                            <!-- Example in your featured cards -->
+                            <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                            <!-- id=1, id=2 etc. according to your allPosts array -->
+                            <div class="article-meta">
+                                <span>By Rachel Simmons</span>
+                                <span>June 15, 2023 • 7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=600&h=400"
+                                alt="Eco Travel">
+                        </div>
+                        <div class="post-content">
+                            <span class="category travel">Sustainability</span>
+                            <h3>Eco-Friendly Travel: How to Reduce Your Impact While Exploring</h3>
+                            <p class="post-excerpt">Practical ways to make your travels more sustainable, from
+                                transportation choices to accommodation.</p>
+                            <!-- Example in your featured cards -->
+                            <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                            <!-- id=1, id=2 etc. according to your allPosts array -->
+                            <div class="article-meta">
+                                <span>By Carlos Mendez</span>
+                                <span>June 12, 2023 • 8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- About Widget -->
+                    <div class="sidebar-widget about-widget">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100"
+                            alt="Author">
+                        <h4>Travel Editor</h4>
+                        <p>Hi, I'm Marco! With 50+ countries under my belt, I'm passionate about responsible travel that
+                            connects people and cultures.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Popular Travel Posts -->
+                    <div class="sidebar-widget">
+                        <h4>Popular Travel Posts</h4>
+                        <ul class="popular-posts">
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?auto=format&fit=crop&w=200&h=200"
+                                        alt="Europe">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>10 Underrated European Cities</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 25, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=200&h=200"
+                                        alt="Africa">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Safari Packing List Essentials</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 18, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=200&h=200"
+                                        alt="Backpacking">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Backpacking Southeast Asia Route</h5>
+                                    <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 10, 2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Travel Newsletter -->
+                    <div class="sidebar-widget">
+                        <h4>Travel Newsletter</h4>
+                        <p>Get weekly travel inspiration, destination guides, and exclusive deals straight to your
+                            inbox.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <h4>About Insightful</h4>
+                    <p>A platform for curious minds to explore ideas, share perspectives, and discover the world through
+                        thoughtful content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="technology.html"><i class="fas fa-chevron-right"></i> Technology</a></li>
+                        <li><a href="lifestyle.html"><i class="fas fa-chevron-right"></i> Lifestyle</a></li>
+                        <li><a href="travel.html"><i class="fas fa-chevron-right"></i> Travel</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Travel Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Destination Guides</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Travel Tips</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Budget Travel</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Solo Travel</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Sustainable Travel</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Adventure Lane, Explorer City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-7890</li>
+                        <li><i class="fas fa-envelope"></i> travel@insightfulblog.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Insightful Blog. All rights reserved. Designed for explorers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function () {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+
+            // Optional: Change icon when menu is open
+            this.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function () {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Responsive adjustments
+        window.addEventListener('resize', function () {
+            const navLinks = document.querySelector('.nav-links');
+            if (window.innerWidth > 768) {
+                navLinks.style.display = 'flex';
+            } else {
+                navLinks.style.display = 'none';
+            }
+        });
+
+        // Newsletter form submission
+        document.querySelectorAll('.newsletter-form').forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                if (email) {
+                    alert(`Thank you for subscribing with ${email}! You'll receive our travel newsletter soon.`);
+                    this.reset();
+                }
+            });
+        });
+
+        // Simple interactive map functionality (placeholder)
+        document.querySelector('.map-container').addEventListener('click', function () {
+            alert('Interactive world map coming soon! This will allow you to explore destinations visually.');
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
