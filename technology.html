@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology | Insightful Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-blog"></i>
+                    Insightful
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="mobile-toggle" id="mobileToggle">
+                    ☰
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Technology Hero Section -->
+    <section class="tech-hero">
+        <div class="container">
+            <h1>Technology Insights</h1>
+            <p>Explore the latest trends, innovations, and breakthroughs in the world of technology. From AI to
+                blockchain, we cover it all.</p>
+        </div>
+    </section>
+
+    <!-- Technology Featured Section -->
+    <section class="tech-featured">
+        <div class="container">
+            <h2 class="section-title">Featured Technology Articles</h2>
+
+            <div class="featured-grid">
+                <!-- Featured Article 1 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=600&h=400"
+                            alt="AI Technology">
+                    </div>
+                    <div class="card-content">
+                        <span class="category tech">Artificial Intelligence</span>
+                        <h3>The Future of AI: How Machine Learning is Changing Everything</h3>
+                        <p>Exploring how AI is transforming industries from healthcare to finance and what it means for
+                            the future of work.</p>
+  <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>Michael Chen</div>
+                                <div>May 12, 2023 • 8 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Article 2 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=600&h=400"
+                            alt="Web Development">
+                    </div>
+                    <div class="card-content">
+                        <span class="category tech">Web Development</span>
+                        <h3>React 19: What's New and Why You Should Care</h3>
+                        <p>A deep dive into the latest features of React 19 and how they can improve your development
+                            workflow.</p>
+  <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>Alex Morgan</div>
+                                <div>June 15, 2023 • 10 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Article 3 -->
+                <article class="featured-card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?auto=format&fit=crop&w=600&h=400"
+                            alt="Blockchain">
+                    </div>
+                    <div class="card-content">
+                        <span class="category tech">Blockchain</span>
+                        <h3>Understanding Web3: The Decentralized Internet Revolution</h3>
+                        <p>How blockchain technology is paving the way for a new era of internet applications and
+                            services.</p>
+                          <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                        <div class="meta">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&h=100"
+                                alt="Author">
+                            <div>
+                                <div>Jennifer Park</div>
+                                <div>June 10, 2023 • 12 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Articles Section -->
+    <section class="tech-articles">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="posts">
+                    <h2 class="section-title">Latest Technology Articles</h2>
+
+                    <!-- Trending Topics -->
+                    <div class="trending-topics">
+                        <h4>Trending Topics:</h4>
+                        <div class="tech-categories">
+                            <a href="#" class="tech-category">Artificial Intelligence</a>
+                            <a href="#" class="tech-category">Web Development</a>
+                            <a href="#" class="tech-category">Cybersecurity</a>
+                            <a href="#" class="tech-category">Cloud Computing</a>
+                            <a href="#" class="tech-category">Data Science</a>
+                            <a href="#" class="tech-category">Blockchain</a>
+                            <a href="#" class="tech-category">DevOps</a>
+                            <a href="#" class="tech-category">IoT</a>
+                        </div>
+                    </div>
+
+                    <!-- Article 1 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&h=400"
+                                alt="Remote Work">
+                        </div>
+                        <div class="post-content">
+                            <span class="category tech">Productivity</span>
+                            <h3>The Best Productivity Tools for Developers in 2023</h3>
+                            <p class="post-excerpt">A comprehensive review of the top tools that can
+                                help developers work more efficiently, from code editors to project
+                                management software.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                            <div class="article-meta">
+                                <span>By David Wilson</span>
+                                <span>June 18, 2023 • 7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1624953587687-daf255b6b80a?auto=format&fit=crop&w=600&h=400"
+                                alt="Cybersecurity">
+                        </div>
+                        <div class="post-content">
+                            <span class="category tech">Cybersecurity</span>
+                            <h3>Essential Cybersecurity Practices Every Developer Should Know</h3>
+                            <p class="post-excerpt">Learn the fundamental security practices that
+                                can protect your applications and users from common vulnerabilities
+                                and attacks.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                            <div class="article-meta">
+                                <span>By Sarah Johnson</span>
+                                <span>June 15, 2023 • 9 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="post-card">
+                        <div class="post-img">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&h=400"
+                                alt="Cloud Computing">
+                        </div>
+                        <div class="post-content">
+                            <span class="category tech">Cloud Computing</span>
+                            <h3>Comparing AWS, Azure, and Google Cloud: Which One is Right for You?
+                            </h3>
+                            <p class="post-excerpt">An in-depth comparison of the three major cloud
+                                providers to help you choose the best platform for your projects.
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                            <div class="article-meta">
+                                <span>By Thomas Lee</span>
+                                <span>June 12, 2023 • 11 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- About Widget -->
+                    <div class="sidebar-widget about-widget">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200"
+                            alt="Tech Editor">
+                        <h4>Tech Editor</h4>
+                        <p>Hi, I'm Mark, a senior developer with 10+ years of experience. I share
+                            insights about programming, new technologies, and developer tools.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Popular Tech Posts -->
+                    <div class="sidebar-widget">
+                        <h4>Popular Tech Posts</h4>
+                        <ul class="popular-posts">
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=200&h=200"
+                                        alt="JavaScript">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>10 JavaScript Frameworks to Learn in 2023</h5>
+                                      <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>June 2, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?auto=format&fit=crop&w=200&h=200"
+                                        alt="Python">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Python vs JavaScript: Which Should You Learn First?</h5>
+                                      <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 25, 2023</span>
+                                </div>
+                            </li>
+                            <li class="popular-post">
+                                <div class="popular-post-img">
+                                    <img src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?auto=format&fit=crop&w=200&h=200"
+                                        alt="DevOps">
+                                </div>
+                                <div class="popular-post-content">
+                                    <h5>Getting Started with DevOps: A Beginner's Guide</h5>
+                                      <!-- Example in your featured cards -->
+                                    <a href="post.html?id=1" class="read-more">Read Full Post →</a>
+                                    <!-- id=1, id=2 etc. according to your allPosts array -->
+                                    <span>May 18, 2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tech Newsletter -->
+                    <div class="sidebar-widget">
+                        <h4>Tech Newsletter</h4>
+                        <p>Get weekly updates on the latest in technology, developer tools, and
+                            coding tips.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <h4>About Insightful</h4>
+                    <p>A platform for curious minds to explore ideas, share perspectives, and
+                        discover the world through thoughtful content.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="technology.html"><i class="fas fa-chevron-right"></i>
+                                Technology</a></li>
+                        <li><a href="lifestyle.html"><i class="fas fa-chevron-right"></i>
+                                Lifestyle</a></li>
+                        <li><a href="travel.html"><i class="fas fa-chevron-right"></i> Travel</a>
+                        </li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Tech Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a>
+                        </li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Artificial
+                                Intelligence</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cybersecurity</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cloud Computing</a>
+                        </li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Blockchain</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Innovation City
+                        </li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> tech@insightfulblog.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Insightful Blog. All rights reserved. Designed for tech enthusiasts.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function () {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+
+            // Optional: Change icon when menu is open
+            this.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function () {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Responsive adjustments
+        window.addEventListener('resize', function () {
+            const navLinks = document.querySelector('.nav-links');
+            if (window.innerWidth > 768) {
+                navLinks.style.display = 'flex';
+            } else {
+                navLinks.style.display = 'none';
+            }
+        });
+
+        // Newsletter form submission
+        document.querySelectorAll('.newsletter-form').forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                if (email) {
+                    alert(`Thank you for subscribing with ${email}! You'll receive our tech newsletter soon.`);
+                    this.reset();
+                }
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
