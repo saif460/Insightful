@@ -24,6 +24,139 @@
             object-fit: cover;
             border-radius: 8px;
         }
+
+/*         
+        */
+
+        .post-full {
+  padding: 2rem 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  color: #4a6bdf;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+}
+
+.post-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #e0e6ff;
+  color: #4a6bdf;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.post-meta img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-featured-image {
+  margin: 2rem 0;
+}
+
+.post-featured-image img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.post-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content h2 {
+  margin: 2rem 0 1rem;
+  color: #222;
+}
+
+.post-content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #555;
+}
+
+.post-share {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-share a {
+  color: #555;
+  font-size: 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .post-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
     </style>
 </head>
 
@@ -54,7 +187,6 @@
         </div>
     </header>
 
-<!-- Add this in the <body> section, replacing your current post-container section -->
 <section class="post-full">
   <div class="container">
     <!-- Back button -->
@@ -64,7 +196,7 @@
     
     <!-- Post header -->
     <div class="post-header">
-      <span class="post-category" id="post-category">Technology</span>
+      <span class="post-category tech" id="post-category">Technology</span>
       <h1 id="post-title">Post Title</h1>
       <div class="post-meta">
         <img id="post-author-img" src="https://via.placeholder.com/50" alt="Author">
@@ -82,12 +214,12 @@
     
     <!-- Post content -->
     <article class="post-content" id="post-content">
-      <!-- Content will be inserted here by JavaScript -->
+      <p>Post content will load here...</p>
     </article>
     
     <!-- Post footer -->
     <div class="post-footer">
-      <div class="post-tags">
+      <div class="post-tags" id="post-tags">
         <a href="#" class="tag">Technology</a>
         <a href="#" class="tag">AI</a>
         <a href="#" class="tag">Innovation</a>
@@ -101,6 +233,7 @@
     </div>
   </div>
 </section>
+   
 
     <!-- FAQ Section -->
     <section class="faq-section">
@@ -270,7 +403,57 @@
 "</p>"
     }
     // Add more posts as needed
-};                      
+};    
+        document.addEventListener('DOMContentLoaded', function() {
+    // Sample post data - replace with your actual data structure
+    const postData = {
+        id: 4,
+        title: "پی ٹی اے کی جانب سے خوشی کا جشن – 2 جی بی ڈیٹا اور 200 منٹس مفت!",
+        category: "Announcement",
+        image: "data:image/jpeg;base64,/9j/4AAQ...", // your base64 image
+        content: `
+            <p>🎉 پی ٹی اے اور موبائل آپریٹرز کی شاندار خوشخبری! 🇵🇰📱</p>
+            <p>پاکستان میں 20 کروڑ ٹیلی کام صارفین کا سنگِ میل عبور کرنے کی خوشی میں،
+            20 جون 2025 کو تمام صارفین کے لیے ہے ایک خاص تحفہ! 🎁</p>
+            <h2>تفصیلات</h2>
+            <ul>
+                <li>📅 صرف 24 گھنٹوں کے لیے</li>
+                <li>💥 2 جی بی مفت انٹرنیٹ ڈیٹا</li>
+                <li>💬 200 آن نیٹ منٹس (اپنے نیٹ ورک پر کالز)</li>
+            </ul>
+            <p>اور سب سے بہترین بات؟ یہ آفر حاصل کرنا ہے نہایت آسان!</p>
+            <p><strong>📲 ابھی اپنے موبائل سے #2200* ڈائل کریں</strong></p>
+        `,
+        author: "PTA Official",
+        authorImg: "https://via.placeholder.com/100",
+        date: "Jun 20, 2025",
+        readTime: "3 min read",
+        tags: ["PTA", "Mobile", "Free Data"]
+    };
+
+    // Populate the post data
+    document.title = postData.title;
+    document.getElementById('post-category').textContent = postData.category;
+    document.getElementById('post-title').textContent = postData.title;
+    document.getElementById('post-image').src = postData.image;
+    document.getElementById('post-image').alt = postData.title;
+    document.getElementById('post-author').textContent = postData.author;
+    document.getElementById('post-author-img').src = postData.authorImg;
+    document.getElementById('post-author-img').alt = postData.author;
+    document.getElementById('post-date').textContent = `${postData.date} • ${postData.readTime}`;
+    document.getElementById('post-content').innerHTML = postData.content;
+    
+    // Update tags
+    const tagsContainer = document.getElementById('post-tags');
+    tagsContainer.innerHTML = '';
+    postData.tags.forEach(tag => {
+        const tagElement = document.createElement('a');
+        tagElement.href = '#';
+        tagElement.className = 'tag';
+        tagElement.textContent = tag;
+        tagsContainer.appendChild(tagElement);
+    });
+});
         const urlParams = new URLSearchParams(window.location.search);
         const postId = urlParams.get('id');
         const post = allPosts[postId];
