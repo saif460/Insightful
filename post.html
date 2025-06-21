@@ -453,20 +453,7 @@
         tagElement.textContent = tag;
         tagsContainer.appendChild(tagElement);
     });
-});
-        const urlParams = new URLSearchParams(window.location.search);
-        const postId = urlParams.get('id');
-        const post = allPosts[postId];
 
-        if (post) {
-            document.title = post.title;
-            document.getElementById('post-title').textContent = post.title;
-            document.getElementById('post-image').src = post.image;
-            document.getElementById('post-content').innerHTML = post.content;
-        } else {
-            document.getElementById('post-title').textContent = "Post Not Found!";
-        }
-    });
 
 
 
