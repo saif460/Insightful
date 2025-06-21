@@ -53,12 +53,54 @@
             </nav>
         </div>
     </header>
-<section class="post-container">
-  <h1 id="post-title"></h1>
-  <img id="post-image" class="post-image" alt="Post Image">
-  <div id="post-content"></div>
-</section>
 
+<!-- Add this in the <body> section, replacing your current post-container section -->
+<section class="post-full">
+  <div class="container">
+    <!-- Back button -->
+    <a href="technology.html" class="back-button">
+      <i class="fas fa-arrow-left"></i> Back to Articles
+    </a>
+    
+    <!-- Post header -->
+    <div class="post-header">
+      <span class="post-category" id="post-category">Technology</span>
+      <h1 id="post-title">Post Title</h1>
+      <div class="post-meta">
+        <img id="post-author-img" src="https://via.placeholder.com/50" alt="Author">
+        <div>
+          <span id="post-author">Author Name</span>
+          <span id="post-date">June 20, 2023 • 5 min read</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Featured image -->
+    <div class="post-featured-image">
+      <img id="post-image" src="https://via.placeholder.com/800x400" alt="Featured Image">
+    </div>
+    
+    <!-- Post content -->
+    <article class="post-content" id="post-content">
+      <!-- Content will be inserted here by JavaScript -->
+    </article>
+    
+    <!-- Post footer -->
+    <div class="post-footer">
+      <div class="post-tags">
+        <a href="#" class="tag">Technology</a>
+        <a href="#" class="tag">AI</a>
+        <a href="#" class="tag">Innovation</a>
+      </div>
+      <div class="post-share">
+        <span>Share:</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- FAQ Section -->
     <section class="faq-section">
