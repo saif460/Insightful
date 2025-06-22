@@ -1,4 +1,4 @@
-
+alert("hello");
         document.addEventListener('DOMContentLoaded', function() {
     // Sample post data - replace with your actual data structure
     const postData = {
